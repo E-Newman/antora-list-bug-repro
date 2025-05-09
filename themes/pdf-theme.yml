@@ -1,0 +1,45 @@
+extends: default-with-font-fallbacks
+font:
+  catalog:
+    merge: true
+    Roboto:
+      normal: roboto-normal.ttf
+      italic: roboto-italic.ttf
+      bold: roboto-bold.ttf
+      bold_italic: roboto-bold_italic.ttf
+    Roboto Light:
+      normal: roboto-light-normal.ttf
+      italic: roboto-light-italic.ttf
+      bold: roboto-bold.ttf
+      bold_italic: roboto-bold_italic.ttf
+base:
+  font_family: Roboto Light
+title-page:
+  text_align: center
+  title:
+    font_color: 00000
+  subtitle:
+    font_color: 00000
+  authors:
+    content: 'v{version}'
+  revision:
+    display: none
+footer:
+  height: 30
+  recto:
+    center:
+      content: 'Version {version}'
+    right:
+      content: '{page-number}'
+    left:
+      content: ''
+  verso:
+    center:
+      content: 'Version {version}'
+    right:
+      content: $footer-recto-right-content
+    left:
+      content: ''
+page:
+  numbering:
+    start-at: title

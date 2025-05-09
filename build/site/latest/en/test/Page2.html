@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Lorem Ipsum 2 :: Reproducing bullet list bug</title>
+    <link rel="prev" href="BrokenListItem.html">
+    <meta name="generator" content="Antora 3.1.10">
+    <link rel="stylesheet" href="../../../assets/css/site.css">
+    <script>var uiRootPath = '../../../assets'</script>
+<link rel="icon" href="../../../assets/img/favicon.ico" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../../..">Reproducing bullet list bug</a>
+      <div class="navbar-item search hide-for-print">
+        <div id="search-field" class="field">
+          <input id="search-input" type="text" placeholder="Поиск">
+        </div>
+      </div>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="latest" data-version="en">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Reproducing bullet list bug</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="BrokenListItem.html">Lorem Ipsum</a>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="Page2.html">Lorem Ipsum 2</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Reproducing bullet list bug</span>
+    <span class="version">1.0.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">Reproducing bullet list bug</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">1.0.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Reproducing bullet list bug</a></li>
+    <li><a href="BrokenListItem.html">Lorem Ipsum</a></li>
+    <li><a href="Page2.html">Lorem Ipsum 2</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+    <h1 class="page">Lorem Ipsum 2</h1>
+  <div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="anchor-1"><a class="anchor" href="#anchor-1"></a>Lorem Ipsum</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis</p>
+</div>
+<div class="paragraph">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+</div>
+<div class="paragraph">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+</div>
+<div class="sect2">
+<h3 id="anchor-2"><a class="anchor" href="#anchor-2"></a>List 1</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Item</p>
+</li>
+<li>
+<p>Item</p>
+</li>
+<li>
+<p>Item</p>
+</li>
+<li>
+<p>Item</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="anchor-3"><a class="anchor" href="#anchor-3"></a>List 2</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Item</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Item</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Item</p>
+</li>
+<li>
+<p>Item</p>
+</li>
+<li>
+<p>Broken Item!</p>
+</li>
+<li>
+<p>Item</p>
+</li>
+<li>
+<p>Item</p>
+</li>
+<li>
+<p>Item</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Item</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Item</p>
+</li>
+<li>
+<p>Item</p>
+</li>
+<li>
+<p>Item</p>
+</li>
+<li>
+<p>Item</p>
+</li>
+<li>
+<p>Item</p>
+</li>
+<li>
+<p>Item</p>
+</li>
+<li>
+<p>Item</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Item</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+  <nav class="pagination">
+  <span class="prev"><a href="BrokenListItem.html">Lorem Ipsum</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<script src="../../../assets/js/vendor/lunr.js"></script>
+    <script src="../../../assets/js/vendor/lunr.js"></script>
+<script src="../../../assets/js/search-ui.js" id="search-ui-script" data-site-root-path="../../.." data-snippet-length="50" data-stylesheet="../../../assets/css/search.css"></script>
+<script async src="../../../search-index.js"></script>
+<script src="../../../assets/js/site.js"></script>
+  </body>
+</html>

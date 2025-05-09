@@ -1,0 +1,31 @@
+site:
+  title: Reproducing bullet list bug
+  keys:
+    locales: en
+  start_page: latest:ROOT:index.adoc
+content:
+  sources:
+    - url: .
+      start_path: src
+      branches: HEAD
+ui:
+  bundle:
+    url: themes/ui-bundle
+    snapshot: true
+  output_dir: assets
+#output:
+#  dir: ./build
+antora:
+  extensions:
+    - require: '@antora/lunr-extension'
+      languages: [en]
+      index_latest_only: true
+asciidoc:
+  attributes:
+    page-pagination: true
+    hide-uri-scheme: '@'
+    pdf-theme: themes/pdf-theme.yml
+    pdf-fontsdir: themes/pdf-fonts
+urls:
+  latest_version_segment: en
+  latest_version_segment_strategy: redirect:to

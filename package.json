@@ -1,0 +1,40 @@
+{
+  "name": "test.documentation",
+  "scripts": {
+    "generate": "npx antora test-playbook.yml --fetch",
+    "generate:pdf": "npx antora --attribute version=$npm_config_docversion --extension @antora/pdf-extension test-playbook.yml --fetch",
+    "generate:pdf:win": "npx antora --attribute version=%npm_config_docversion% --extension @antora/pdf-extension test-playbook.yml --fetch",
+    "test": "npx jest --testTimeout=30000",
+    "test:cov": "npx jest --coverage",
+    "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
+    "test:watch": "npx jest --watch",
+    "build": "tsc",
+    "build:fuzz": "npm run generate && rm -rf dist && tsc -p tsconfig.fuzzing.json && cp -r src/ dist/src/ && cp -r build/ dist/build/"
+  },
+  "dependencies": {
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@antora/cli": "^3.1.2",
+    "@antora/lunr-extension": "^1.0.0-alpha.8",
+    "@antora/pdf-extension": "^1.0.0-alpha.11",
+    "@antora/site-generator": "^3.1.2",
+    "cheerio": "1.0.0-rc.12",
+    "yaml": "2.3.1",
+    "@types/node": "20.2.5"
+  },
+  "jest": {
+    "coverageDirectory": "../coverage",
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": ".",
+    "testEnvironment": "node",
+    "testRegex": ".spec.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    }
+  }
+}
